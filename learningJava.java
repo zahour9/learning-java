@@ -5,11 +5,8 @@ public class learningJava {
         System.out.println(bigNum);
     }
     public static double getBigNum(double[] arr){
-        double num = 0;
+        double num = arr[0];
         for(int i = 0; i < arr.length; i++){
-            if(i == 0){
-            num = arr[0];
-            }
             if(arr[i] > num){
                 num = arr[i];
             }
