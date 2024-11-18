@@ -12,8 +12,8 @@ public class learningJavaTest {
     }
     @Test
     public void testGetBigNum(){
-        double[] array = {-19595954.0002, 19595954.0001, -3, 40404};
-        assertEquals(learningJava.getBigNum(array), 19595954.0001, 0.0001);
+        double[] array = {3, 8.2, -9, 6};
+        assertEquals(learningJava.getBigNum(array), 6, 0.0001);
         assertEquals(isEven(learningJava.getBigNum(array)), true);
 }
 }
