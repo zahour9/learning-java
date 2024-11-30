@@ -37,7 +37,9 @@ public class dateCalculator {
         numberOfDays = ChronoUnit.DAYS.between(startDate, endDate) - weeks * 2;
         }
         output = "The number of days between " + a + " and "  + b + " is: " + numberOfDays;
-
+        if(numberOfDays < 0 ) {
+            output = "Start date is bigger than end date";
+        }
         }
         else {
             return output;
